@@ -10,6 +10,7 @@ import AddItemScreen from "./Pages/AddItem/AddItemScreen";
 import ItemDetailsScreen from "./Pages/ItemDetailsScreen/ItemDetailsScreen";
 import TabBar from "./components/TabBar/TabBar";
 import { ProductView } from "./Pages/ProductView/ProductView";
+import { SideBar } from "./components/SideBar/SideBar";
 
 const Stack = createStackNavigator();
 
@@ -30,6 +31,7 @@ export default function App() {
           ) : (
             <>
               <Stack.Screen name="Home" component={HomeScreen} />
+              {/* <Stack.Screen name="SideBar" component={SideBar} /> */}
               <Stack.Screen name="AddItem" component={AddItemScreen} />
               <Stack.Screen name="ItemDetails" component={ItemDetailsScreen} />
               <Stack.Screen name="ProductView" component={ProductView} />

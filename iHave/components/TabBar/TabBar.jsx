@@ -1,7 +1,8 @@
 import React from "react";
-import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
+import { View, Text, TouchableOpacity } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { useNavigation } from "@react-navigation/native";
+import { styles } from "./TabBarStyle";
 
 const TabBar = () => {
   const navigation = useNavigation();
@@ -35,26 +36,5 @@ const TabBar = () => {
     </View>
   );
 };
-
-const styles = StyleSheet.create({
-  tabContainer: {
-    flexDirection: "row",
-    justifyContent: "space-around",
-    alignItems: "center",
-    backgroundColor: "#fff",
-    borderTopWidth: 1,
-    borderTopColor: "#ddd",
-    paddingBottom: 5,
-    paddingTop: 5,
-    marginBottom: 20,
-  },
-  tabButton: {
-    alignItems: "center",
-  },
-  tabLabel: {
-    fontSize: 12,
-    marginTop: 2,
-  },
-});
 
 export default TabBar;

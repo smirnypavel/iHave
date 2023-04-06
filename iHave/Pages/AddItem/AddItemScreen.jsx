@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { View, Text, TextInput, Button, StyleSheet } from "react-native";
+import { View, Text, TextInput, Button } from "react-native";
+import { styles } from "./AddItemStyle";
 
 const AddItemForm = ({ onAddItem }) => {
   const [itemName, setItemName] = useState("");
@@ -42,24 +43,5 @@ const AddItemForm = ({ onAddItem }) => {
     </View>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    margin: 16,
-  },
-  label: {
-    fontSize: 16,
-    fontWeight: "bold",
-    marginBottom: 8,
-  },
-  input: {
-    fontSize: 16,
-    padding: 8,
-    marginBottom: 16,
-    borderWidth: 1,
-    borderRadius: 4,
-    borderColor: "#ccc",
-  },
-});
 
 export default AddItemForm;
