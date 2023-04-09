@@ -19,4 +19,7 @@ export const styles = StyleSheet.create({
   itemDescription: {
     fontSize: 16,
   },
+  // contentContainer: {
+  //   margin: 30,
+  // },
 });

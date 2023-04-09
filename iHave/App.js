@@ -31,7 +31,7 @@ export default function App() {
           ) : (
             <>
               <Stack.Screen name="Home" component={HomeScreen} />
-              {/* <Stack.Screen name="SideBar" component={SideBar} /> */}
+              <Stack.Screen name="SideBar" component={SideBar} />
               <Stack.Screen name="AddItem" component={AddItemScreen} />
               <Stack.Screen name="ItemDetails" component={ItemDetailsScreen} />
               <Stack.Screen name="ProductView" component={ProductView} />
